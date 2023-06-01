@@ -1,0 +1,16 @@
+
+{
+    "name": "NO TAB",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup":"popup.html"
+    },
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [{
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content-script.js"]
+    }]
+  }
